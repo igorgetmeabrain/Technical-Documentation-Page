@@ -1,0 +1,374 @@
+/* USE THIS TO SEE BOXES 
+* {border: 1px solid red !important;}
+*/
+/*TO FIX: iframe white text and scalability, anchor tags in portrait */
+:root {font-family: 'Secular One', sans-serif; 
+font-size: 1vw;
+--main-blue: hsla(235, 100%, 50%, 0.5); 
+--black-background: hsla(0, 0%, 0%, 0.9);
+--blackish-background: hsla(0, 0%, 0%, 0.4); 
+--orange-titles: hsla(20, 100%, 60%, 0.8);
+--white-background: linear-gradient(135deg, hsla(0, 0%, 100%, 0),  hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 0));
+--red-background: linear-gradient(135deg, hsla(0, 100%, 50%, 0), hsla(0, 100%, 50%, 1), hsla(0, 100%, 50%, 0));
+--green-background: linear-gradient(135deg, hsla(121, 77%, 50%, 0), hsla(121, 77%, 50%, 1), hsla(121, 77%, 50%, 0));
+--orange-background: linear-gradient(135deg, hsla(23, 100%, 50%, 0), hsla(23, 100%, 50%, 1), hsla(23, 100%, 50%, 0));
+--blue-background: linear-gradient(135deg, hsla(242, 100%, 50%, 0), hsla(242, 100%, 50%, 1), hsla(242, 100%, 50%, 0));
+--yellow-background: linear-gradient(135deg, hsla(57, 100%, 50%, 0), hsla(57, 100%, 50%, 1), hsla(57, 100%, 50%, 0));
+}
+
+html {box-sizing: border-box; margin: 0; padding: 0;}
+*, *:before, *:after {box-sizing: inherit;}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14.5%;
+  height: 100vh;
+  font-size: 3vh;
+  color: white;
+  background: var(--black-background);
+  text-align: center;
+  border-right: 0.3rem solid blue;
+  z-index: 3;}
+  
+ /*THIS IS A CSS GRID CUBE SUPERFLIP ANIMATION*/
+#cube1 {display: grid; max-width: 100%; margin: 2%; grid-template-columns: 4.5vw 4.5vw 4.5vw; grid-template-rows: 4.5vw 4.5vw 4.5vw; grid-row-gap: 1px; grid-column-gap: 1px;}
+#cube2 {display: grid; max-width: 100%; margin: 2%; grid-template-columns: 4.5vw 4.5vw 4.5vw; grid-template-rows: 4.5vw 4.5vw 4.5vw; grid-row-gap: 1px; grid-column-gap: 1px;}
+#cubie1, #cubie2, #cubie3, #cubie4, #cubie5, #cubie6, #cubie7, #cubie8, #cubie9,  #cubieA, #cubieB, #cubieC, #cubieD, #cubieE, #cubieF, #cubieG, #cubieH, #cubieI {border-radius: 10%; border: 0.2rem solid black;}
+
+#cubie1, #cubieA {animation-name: cubie1; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie1
+{0%{background-color: yellow;}
+21%{background-color: yellow;}
+24%{background-color: orange;}
+27%{background-color: orange;}
+30%{background-color: yellow;}
+33%{background-color: orange;}
+36%{background-color: orange;}
+39%{background-color: red;}
+42%{background-color: red;}
+45%{background-color: green;}
+48%{background-color: yellow;}
+51%{background-color: red;}
+54%{background-color: red;}
+57%{background-color: blue;}
+69%{background-color: blue;}
+72%{background-color: white;}
+75%{background-color: orange;}
+78%{background-color: white;}
+81%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie2, #cubieB {animation-name: cubie2; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie2 
+{0%{background-color: yellow;}
+21%{background-color: yellow;}
+24%{background-color: orange;}
+27%{background-color: orange;}
+30%{background-color: yellow;}
+33%{background-color: red;}
+36%{background-color: red;}
+39%{background-color: yellow;}
+42%{background-color: red;}
+48%{background-color: red;}
+51%{background-color: orange;}
+54%{background-color: orange;}
+57%{background-color: blue;}
+75%{background-color: blue;}
+78%{background-color: green;}
+81%{background-color: orange;}
+84%{background-color: blue;}
+90%{background-color: blue;}
+93%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie3, #cubieC {animation-name: cubie3; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie3 
+{0%{background-color: yellow;}
+12%{background-color: yellow;}
+15%{background-color: orange;}
+18%{background-color: white;}
+21%{background-color: white;}
+24%{background-color: blue;}
+27%{background-color: orange;}
+30%{background-color: white;}
+33%{background-color: green;}
+36%{background-color: orange;}
+39%{background-color: orange;}
+42%{background-color: red;}
+45%{background-color: red;}
+48%{background-color: yellow;}
+51%{background-color: red;}
+54%{background-color: blue;}
+57%{background-color: orange;}
+60%{background-color: white;}
+63%{background-color: blue;}
+66%{background-color: blue;}
+69%{background-color: white;}
+72%{background-color: white;}
+75%{background-color: orange;}
+78%{background-color: white;}
+81%{background-color: white;}
+84%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie4, #cubieD {animation-name: cubie4; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie4 
+{0%{background-color: yellow;}
+36%{background-color: yellow;}
+39%{background-color: red;}
+42%{background-color: yellow;}
+45%{background-color: white;}
+54%{background-color: white;}
+57%{background-color: orange;}
+78%{background-color: orange;}
+81%{background-color: blue;}
+84%{background-color: red;}
+90%{background-color: red;}
+93%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie5, #cubieE {background-color: yellow;}
+
+#cubie6, #cubieF {animation-name: cubie6; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie6 
+{0%{background-color: yellow;}
+12%{background-color: yellow;}
+15%{background-color: green;}
+18%{background-color: white;}
+24%{background-color: white;}
+27%{background-color: orange;}
+33%{background-color: orange;}
+36%{background-color: yellow;}
+39%{background-color: red;}
+42%{background-color: yellow;}
+51%{background-color: yellow;}
+54%{background-color: blue;}
+57%{background-color: red;}
+78%{background-color: red;}
+81%{background-color: green;}
+84%{background-color: orange;}
+90%{background-color: orange;}
+93%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie7, #cubieG {animation-name: cubie7; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie7 
+{0%{background-color: yellow;}
+18%{background-color: yellow;}
+21%{background-color: red;}
+39%{background-color: red;}
+42%{background-color: orange;}
+45%{background-color: blue;}
+54%{background-color: blue;}
+57%{background-color: red;}
+63%{background-color: red;}
+66%{background-color: green;}
+69%{background-color: green;}
+72%{background-color: yellow;}
+81%{background-color: yellow;}
+84%{background-color: white;}
+87%{background-color: orange;}
+90%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie8, #cubieH {animation-name: cubie8; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie8 
+{0%{background-color: yellow;}
+18%{background-color: yellow;}
+21%{background-color: red;}
+36%{background-color: red;}
+39%{background-color: yellow;}
+42%{background-color: red;}
+54%{background-color: red;}
+57%{background-color: white;}
+63%{background-color: white;}
+66%{background-color: blue;}
+78%{background-color: blue;}
+81%{background-color: red;}
+84%{background-color: green;}
+90%{background-color: green;}
+93%{background-color: yellow;}
+100%{background-color: yellow;}}
+
+#cubie9, #cubieI {animation-name: cubie9; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
+@keyframes cubie9 
+{0%{background-color: yellow;}
+12%{background-color: yellow;}
+15%{background-color: green;}
+18%{background-color: white;}
+21%{background-color: green;}
+24%{background-color: green;}
+27%{background-color: blue;}
+33%{background-color: blue;}
+36%{background-color: red;}
+39%{background-color: orange;}
+54%{background-color: orange;}
+57%{background-color: blue;}
+60%{background-color: yellow;}
+63%{background-color: red;}
+66%{background-color: green;}
+69%{background-color: yellow;}
+78%{background-color: yellow;}
+81%{background-color: white;}
+84%{background-color: white;}
+87%{background-color: orange;}
+90%{background-color: yellow;}
+100%{background-color: yellow;}}
+/*END OF CUBE ANIMATION*/
+  
+#navbar-header {margin: 3%;}
+
+#navbar a {display: inline-block; padding: 2px 0; border-top: 0.25rem solid gray;}
+
+.nav-link {width: 100%; text-decoration: none; font-size: 2.5vh; color: blue; transition: all 0.3s ease 0s;}
+.nav-link:hover {background: gray; color: red;}
+
+#main-doc {display: grid; grid-template-columns: 82% auto; margin-left: 14%; margin-top: -8px; margin-right: -6px;}
+
+h1 {display: table; width: 100%; text-align: center; margin-top: 5%; font-size: 4rem;}
+
+h1, h2, h3 {text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; color: var(--orange-titles); background: var(--main-blue); 
+box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 12px 12px rgba(0,0,0,0.75);}
+
+h2 {padding: 1%; margin: 0;}
+
+.main-section ul {text-align: center; margin-bottom: 4.5%;}
+.main-section li {display: inline-block;}
+
+#Introduction {background: var(--black-background); color: white; margin: 0; padding: 2%; border-top: 0.25rem solid blue; border-bottom: 0.25rem solid blue;}
+
+p {font-size: 1.3rem; text-align: center;}
+
+.float-left {float: left; width: 49%; }
+.float-right {float: right; width: 49%;}
+.float-middle {float: left; width: 99%;}
+
+code {font-size: 1rem; text-align: center; background: var(--black-background); color: white; padding: 1%;}
+code img {display: inline-block; margin: auto; max-width: 99%; height: auto; border: 0.25rem solid var(--main-blue);}
+strong {font-size: 1.5rem;}
+
+.main-section {grid-column: 1/2; padding: 2%; border: 0.25rem solid blue;}
+
+.fun-facts {grid-column: 2/3; background: var(--blackish-background); color: black; text-align: center; width: 100%; border: 0.25rem solid blue; margin: 0; padding: 3%;}
+
+.fun-facts a {text-decoration: none; color: blue;}
+	
+h3 {font-size: 1.4rem; padding: 1% 20% 1% 20%; margin: 0;}
+
+.spoilercheck {
+  margin-left: -15px;
+  visibility: hidden;
+}
+
+.spoilerlabel {
+  position: relative;
+  bottom: 1rem;
+  color: white;
+  background-color: blue;
+  border-radius: 10%;
+  font-size: 1.5rem;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.spoilerlabel:hover {
+  transition: 1s;
+  background-color: red;
+}
+
+.spoilerdiv {
+  display: inline-block;
+  max-width: 90%;
+  margin-left: 1%;
+  background: blue;
+  border-radius: 10px;
+  color: white;
+  padding: 0 1%;
+  transition: 1s;
+  opacity: 0;
+}
+
+.spoilercheck:checked~ .spoilerdiv {
+  opacity: 1;
+}
+
+#Notation {background: var(--white-background); margin-top: -0.25%;}
+
+#Bottom_Cross {background: var(--red-background);}
+
+#Bottom_Corners {background: var(--green-background);}
+
+#Middle_Layer {background: var(--orange-background);}
+
+#Orient_Top_Cross {background: var(--blue-background);}
+
+#Permute_Top_Cross {background: var(--yellow-background);}
+
+#Permute_Top_Corners {background: var(--white-background);}
+
+#Orient_Top_Corners {background: var(--green-background);}
+
+/*MEDIA QUERY*/
+@media (orientation: portrait) {
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  color: white;
+  background: hsla(0, 0%, 0%, 0.9);
+  text-align: none;
+  border-right: none;
+}
+
+#cube1 {display: grid; max-width: 12%; margin: 0; padding: 0.5%; grid-template-columns: 4vw 4vw 4vw; grid-template-rows: 4vw 4vw 4vw; grid-row-gap: 1px; grid-column-gap: 1px;}
+#cube2 {position: absolute; top: 0; right: 2%; display: grid; max-width: 12%; margin: 0; 
+padding: 0.5%; grid-template-columns: 4vw 4vw 4vw; grid-template-rows: 4vw 4vw 4vw; grid-row-gap: 1px; grid-column-gap: 1px;}
+
+#navbar-header {position: absolute; top: 25%; left: 0; width: 100%; text-align: center; font-size: 3rem;}
+#navbar a {display: inline; padding: 0.2% 0.8%; margin-right: 0; border-top: none; font-size: 2.5rem;}
+
+.nav-link {text-decoration: none; font-size: 1.2rem; color: blue; transition: all 0.3s ease 0s;}
+.nav-link:hover {background: gray; color: red;}
+
+#main-doc {display: block; width: 102.25%; margin-left: -1.25%;}
+
+h1 {display: block; position: fixed; top: 1%; left: 13.5%; width: 72.5%; text-align: center; margin-top: 0; z-index: 4;}
+
+#superflip {display: block; width: 0; height: auto; padding: 0;}
+#Introduction {margin: 20% 0 0 0;}
+
+.main-section {border: 0.5rem solid blue;}
+.fun-facts {border: 0.5rem solid blue;}
+h2, h3 {font-size: 3rem; margin-top: 0;}
+
+/*#Notation::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -40vh;
+  height: 40vh; 
+  visibility: hidden;
+  position: relative;
+  z-index: -1;
+}*/
+
+code {font-size: 2.7rem; padding: 1%;}
+strong {font-size: 2.5rem;}
+p {font-size: 3rem;}
+.spoilerlabel {font-size: 2.5rem;}
+.spoilerdiv {max-width: 80%;}
+.spoilerdiv p {font-size: 1.8rem;}
+}
+/*END OF MEDIA QUERY*/
+
+.container {position: relative;}
+
+.container:before {content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; 
+background-image: url("https://live.staticflickr.com/65535/50444594401_9ff08e6a23_o.png"); 
+background-size: 50.5%; background-repeat: repeat; filter: blur(10px); opacity: 0.7;}
+
+.content {position: relative; z-index: 2;}
