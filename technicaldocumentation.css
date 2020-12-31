@@ -1,12 +1,13 @@
-/* USE THIS TO SEE BOXES 
+/* USE THIS TO SEE BOXES
 * {border: 1px solid red !important;}
 */
-/*TO FIX: iframe white text and scalability, anchor tags in portrait */
-:root {font-family: 'Secular One', sans-serif; 
+/*TO FIX: gap above notation for anchor tags - click on title to return to top of page */
+:root {font-family: 'Secular One', sans-serif;
 font-size: 1vw;
---main-blue: hsla(235, 100%, 50%, 0.5); 
+--main-blue: hsla(235, 100%, 50%, 0.5);
 --black-background: hsla(0, 0%, 0%, 0.9);
---blackish-background: hsla(0, 0%, 0%, 0.4); 
+--whitish-background: hsla(0, 0%, 100%, 0.4);
+--blackish-background: hsla(0, 0%, 0%, 0.4);
 --orange-titles: hsla(20, 100%, 60%, 0.8);
 --white-background: linear-gradient(135deg, hsla(0, 0%, 100%, 0),  hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 0));
 --red-background: linear-gradient(135deg, hsla(0, 100%, 50%, 0), hsla(0, 100%, 50%, 1), hsla(0, 100%, 50%, 0));
@@ -31,7 +32,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
   text-align: center;
   border-right: 0.3rem solid blue;
   z-index: 3;}
-  
+
  /*THIS IS A CSS GRID CUBE SUPERFLIP ANIMATION*/
 #cube1 {display: grid; max-width: 100%; margin: 2%; grid-template-columns: 4.5vw 4.5vw 4.5vw; grid-template-rows: 4.5vw 4.5vw 4.5vw; grid-row-gap: 1px; grid-column-gap: 1px;}
 #cube2 {display: grid; max-width: 100%; margin: 2%; grid-template-columns: 4.5vw 4.5vw 4.5vw; grid-template-rows: 4.5vw 4.5vw 4.5vw; grid-row-gap: 1px; grid-column-gap: 1px;}
@@ -61,7 +62,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 100%{background-color: yellow;}}
 
 #cubie2, #cubieB {animation-name: cubie2; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie2 
+@keyframes cubie2
 {0%{background-color: yellow;}
 21%{background-color: yellow;}
 24%{background-color: orange;}
@@ -84,7 +85,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 100%{background-color: yellow;}}
 
 #cubie3, #cubieC {animation-name: cubie3; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie3 
+@keyframes cubie3
 {0%{background-color: yellow;}
 12%{background-color: yellow;}
 15%{background-color: orange;}
@@ -114,7 +115,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 100%{background-color: yellow;}}
 
 #cubie4, #cubieD {animation-name: cubie4; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie4 
+@keyframes cubie4
 {0%{background-color: yellow;}
 36%{background-color: yellow;}
 39%{background-color: red;}
@@ -132,7 +133,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 #cubie5, #cubieE {background-color: yellow;}
 
 #cubie6, #cubieF {animation-name: cubie6; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie6 
+@keyframes cubie6
 {0%{background-color: yellow;}
 12%{background-color: yellow;}
 15%{background-color: green;}
@@ -154,7 +155,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 100%{background-color: yellow;}}
 
 #cubie7, #cubieG {animation-name: cubie7; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie7 
+@keyframes cubie7
 {0%{background-color: yellow;}
 18%{background-color: yellow;}
 21%{background-color: red;}
@@ -174,7 +175,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 100%{background-color: yellow;}}
 
 #cubie8, #cubieH {animation-name: cubie8; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie8 
+@keyframes cubie8
 {0%{background-color: yellow;}
 18%{background-color: yellow;}
 21%{background-color: red;}
@@ -193,7 +194,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 100%{background-color: yellow;}}
 
 #cubie9, #cubieI {animation-name: cubie9; animation-duration: 60s; animation-iteration-count: infinite; animation-timing-function: linear;}
-@keyframes cubie9 
+@keyframes cubie9
 {0%{background-color: yellow;}
 12%{background-color: yellow;}
 15%{background-color: green;}
@@ -217,7 +218,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 90%{background-color: yellow;}
 100%{background-color: yellow;}}
 /*END OF CUBE ANIMATION*/
-  
+
 #navbar-header {margin: 3%;}
 
 #navbar a {display: inline-block; padding: 2px 0; border-top: 0.25rem solid gray;}
@@ -229,7 +230,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 
 h1 {display: table; width: 100%; text-align: center; margin-top: 5%; font-size: 4rem;}
 
-h1, h2, h3 {text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; color: var(--orange-titles); background: var(--main-blue); 
+h1, h2, h3 {text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; color: var(--orange-titles); background: var(--main-blue);
 box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 12px 12px rgba(0,0,0,0.75);}
 
 h2 {padding: 1%; margin: 0;}
@@ -241,11 +242,12 @@ h2 {padding: 1%; margin: 0;}
 
 p {font-size: 1.3rem; text-align: center;}
 
-.float-left {float: left; width: 49%; }
+.float-left {float: left; width: 49%;}
 .float-right {float: right; width: 49%;}
 .float-middle {float: left; width: 99%;}
 
-code {font-size: 1rem; text-align: center; background: var(--black-background); color: white; padding: 1%;}
+code {font-size: 1rem; text-align: center; background: var(--whitish-background); color: black; padding: 1%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 12px 12px rgba(0,0,0,0.75);}
 code img {display: inline-block; margin: auto; max-width: 99%; height: auto; border: 0.25rem solid var(--main-blue);}
 strong {font-size: 1.5rem;}
 
@@ -254,7 +256,7 @@ strong {font-size: 1.5rem;}
 .fun-facts {grid-column: 2/3; background: var(--blackish-background); color: black; text-align: center; width: 100%; border: 0.25rem solid blue; margin: 0; padding: 3%;}
 
 .fun-facts a {text-decoration: none; color: blue;}
-	
+
 h3 {font-size: 1.4rem; padding: 1% 20% 1% 20%; margin: 0;}
 
 .spoilercheck {
@@ -310,8 +312,19 @@ h3 {font-size: 1.4rem; padding: 1% 20% 1% 20%; margin: 0;}
 
 #Orient_Top_Corners {background: var(--green-background);}
 
-/*MEDIA QUERY*/
-@media (orientation: portrait) {
+/*MEDIA QUERIES*/
+@media (max-width: 1000px) {
+  h2, h3 {font-size: 2rem;}
+  code {font-size: 1.5rem;}
+  strong {font-size: 2rem;}
+  p {font-size: 1.8rem;}
+  .float-left, .float-right {height: 50vw;}
+  .spoilerlabel {font-size: 2rem;}
+  .spoilerdiv {max-width: 85%;}
+  .spoilerdiv p {font-size: 1.4rem;}
+}
+
+@media (orientation: portrait), (max-width: 800px) {
 #navbar {
   position: fixed;
   top: 0;
@@ -326,14 +339,15 @@ h3 {font-size: 1.4rem; padding: 1% 20% 1% 20%; margin: 0;}
 }
 
 #cube1 {display: grid; max-width: 12%; margin: 0; padding: 0.5%; grid-template-columns: 4vw 4vw 4vw; grid-template-rows: 4vw 4vw 4vw; grid-row-gap: 1px; grid-column-gap: 1px;}
-#cube2 {position: absolute; top: 0; right: 2%; display: grid; max-width: 12%; margin: 0; 
+#cube2 {position: absolute; top: 0; right: 2%; display: grid; max-width: 12%; margin: 0;
 padding: 0.5%; grid-template-columns: 4vw 4vw 4vw; grid-template-rows: 4vw 4vw 4vw; grid-row-gap: 1px; grid-column-gap: 1px;}
 
 #navbar-header {position: absolute; top: 25%; left: 0; width: 100%; text-align: center; font-size: 3rem;}
-#navbar a {display: inline; padding: 0.2% 0.8%; margin-right: 0; border-top: none; font-size: 2.5rem;}
+#navbar a {display: inline; padding: 0.2% 0.8%; margin-right: 0; border-top: none; font-size: 2.5rem; -webkit-transition:.2s; transition:.2s;}
 
 .nav-link {text-decoration: none; font-size: 1.2rem; color: blue; transition: all 0.3s ease 0s;}
 .nav-link:hover {background: gray; color: red;}
+.xtarget:target {padding-top: 22%;}
 
 #main-doc {display: block; width: 102.25%; margin-left: -1.25%;}
 
@@ -345,16 +359,7 @@ h1 {display: block; position: fixed; top: 1%; left: 13.5%; width: 72.5%; text-al
 .main-section {border: 0.5rem solid blue;}
 .fun-facts {border: 0.5rem solid blue;}
 h2, h3 {font-size: 3rem; margin-top: 0;}
-
-/*#Notation::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -40vh;
-  height: 40vh; 
-  visibility: hidden;
-  position: relative;
-  z-index: -1;
-}*/
+.float-left, .float-right {height: 80vw;}
 
 code {font-size: 2.7rem; padding: 1%;}
 strong {font-size: 2.5rem;}
@@ -367,8 +372,8 @@ p {font-size: 3rem;}
 
 .container {position: relative;}
 
-.container:before {content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; 
-background-image: url("https://live.staticflickr.com/65535/50444594401_9ff08e6a23_o.png"); 
+.container:before {content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1;
+background-image: url("https://live.staticflickr.com/65535/50444594401_9ff08e6a23_o.png");
 background-size: 50.5%; background-repeat: repeat; filter: blur(10px); opacity: 0.7;}
 
 .content {position: relative; z-index: 2;}
