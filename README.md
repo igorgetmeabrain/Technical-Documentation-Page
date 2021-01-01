@@ -1,7 +1,7 @@
 # Technical Documentation Page (freeCodeCamp challenge)
 
 This project was created to fulfil an element of the Responsive Web Design course on freeCodeCamp.  
-The main aim of the project is to ...
+The main aim of the project is to create a documentation page, divided into multiple sections, navigated using a fixed navigation bar. The sections use code and li tags (amongst others) to organise content in a clear and easily digestible manner.
 
 ## Project Criteria
 
@@ -27,10 +27,18 @@ https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 
 ## Design
 
-This was the most ambitious of the FCC mini-projects. blah blah
+This was my most ambitious submission to the FCC mini-projects. I chose to create a guide to solving a Rubik's Cube, as this fitted well with the required criteria for the project. I chose a bold colour-scheme which corresponds with that of a standard 3x3 cube. With a fixed navbar on the left, I kept the main content in the middle of the page and balanced the layout with an column of additional content on the right of the page.
+
 Additional techniques which I explored in this project:
-1. blah
+1. I explored CSS Grid as a technique for adjusting the layout when in portrait mode. In landscape (with fixed left navbar), the main content and additional content columns remained separate. In portrait, CSS Grid enabled me to intersperse the content from both columns into one full-width column, with the navbar fixed at the top of the screen instead.
+2. I also used CSS Grid to create an animation to decorate the navbar. Creating a 3x3 grid, which responsively resizes, I used a colour-change animation to recreate the pattern of colours on the yellow face of a cube as a superflip algorithm is performed.
+3. I had to use a more complex media query to entirely change the layout of the page for smaller screens. An additional intermediate media query was also used, to make content more legible for intermediate screen sizes.
+4. I decided also to integrate basic spoilered text, with a clickable HINT button which reveals useful tips.
+5. I realised that further animations would be necessary to make the guide as user-friendly as possible, but decided to integrate these in the form of an external user-customisable widget, as opposed to designing them from scratch myself.
+6. Employing anti-headbutt tricks in portrait mode, to prevent content being hidden by the navbar when clicking on anchor tags.
+7. In portrait mode, incorporating the main page title, animations and navlinks seamlessly into the navbar, whilst hiding an extraneous image, which was only useful for landscape orientation.
+8. Again, I tried to make the layout and content of the page fully scalable, to cater for all possible screen sizes.
 
 ## Conclusion
 
-It was tough to integrate external content successfully.
+The main challenges of this project were firstly to design and write the guide in a simple and appealing manner, suitable for novice cubers. All content on the page was written by me and all images were created (or modified from external sources) by me also. Secondly, to successfully rescale and reorient the layout for smaller screens (in portrait mode). This was tricky!
