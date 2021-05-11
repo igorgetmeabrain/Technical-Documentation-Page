@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="technicaldocumentation.css">
-  <!--This is required for FCC Test Suite-->
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <title>How to Solve a Rubik's Cube</title>
 </head>
 
@@ -56,19 +55,19 @@
 
         <img class="fun-facts" id="superflip" src="https://live.staticflickr.com/65535/50554235566_df775831b8_o.png" alt="superflip">
 
-        <p id="Introduction"><br>When the Hungarian architect Ernő Rubik invented his eponymous Cube in 1974, little did he know that it would become the world’s best-selling toy,
-          with over 350 million cubes sold worldwide to date.<br><br>
-          Still, it is estimated that only around 1 in 20 people who own a cube know how to solve it. <br><br>
-          The Beginner Method is a simple approach to solving, which can be mastered by anyone,<br>
-          with just a little patience and perseverance.<br><br>
-          If you have never solved a cube, this guide could take you from zero to hero in under an hour!
-        </p>
+        <div id="Introduction"><p>When the Hungarian architect Ernő Rubik invented his eponymous Cube in 1974, little did he know that it would become the world’s best-selling toy,
+          with over 350 million cubes sold worldwide to date.</p>
+          <p>Still, it is estimated that only around 1 in 20 people who own a cube know how to solve it.</p>
+          <p>The Beginner Method is a simple approach to solving, which can be mastered by anyone,
+          with just a little patience and perseverance.</p>
+          <p>If you have never solved a cube, this guide could take you from zero to hero in under an hour!</p>
+        </div>
 
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
           <p>The Rubik’s Cube has 26 pieces (cubies):<br>
-            6 centres, 12 edges and 8 corners.<br><br>
-            The centres are fixed to a central core, allowing the other 20 cubies to move freely around them.</p>
+            6 centres, 12 edges and 8 corners.</p>
+            <p>The centres are fixed to a central core, allowing the other 20 cubies to move freely around them.</p>
         </div>
 
         <section class="main-section xtarget" id="Notation">
@@ -76,35 +75,33 @@
             <h2 id="step-one">Notation</h2>
           </header>
           <p>Rubik's Cube Notation was first developed by self-confessed <a href="https://www.theguardian.com/science/2015/aug/17/can-you-solve-it-are-you-smarter-than-a-metagrobologist" target="_blank">metragrobologist</a>
-            David Singmaster in 1979, as a simple means of indicating rotations of the different faces of the cube.<br><br>
-            Learning this notation will help you to follow the simple algorithms (sequences of moves)<br>
+            David Singmaster in 1979, as a simple means of indicating rotations of the different faces of the cube.</p>
+          <p>Learning this notation will help you to follow the simple algorithms (sequences of moves)
             which are used during each phase of the solve.</p>
-          <code class="float-left">This notation indicates a clockwise quarter-turn (90°)<br>
+          <code class="float-left">This notation indicates a clockwise quarter-turn (90°)
             of the corresponding face of the cube:<br>
-            <ul>
-              <li>R = RIGHT</li>
-              <li>F = FRONT</li>
-              <li>U = UP</li><br>
-              <li>L = LEFT</li>
-              <li>B = BACK</li>
-              <li>D = DOWN</li>
-            </ul>
-            <img src="https://live.staticflickr.com/65535/50528659477_e00b05fdd2_o.png" alt="notation-A"><br><br>
-            NOTE: Clockwise rotation is defined as if the relevant<br>
-            face were facing you (e.g. L rotates clockwise towards<br>
+              R = RIGHT
+              F = FRONT
+              U = UP<br>
+              L = LEFT
+              B = BACK
+              D = DOWN
+            <img src="https://live.staticflickr.com/65535/50528659477_e00b05fdd2_o.png" alt="notation-A">
+            NOTE: Clockwise rotation is defined as if the relevant
+            face were facing you (e.g. L rotates clockwise towards
             you whilst R rotates away from you).
           </code>
-          <code class="float-right">To denote an anti-clockwise quarter-turn, the face<br>
-            letter is followed by a prime symbol (').<br><br>
-            So, whilst R indicates a quarter-turn away from you,<br>
-            R' (AKA "R Prime") is a quarter-turn towards you.<br><br>
-            <img src="https://live.staticflickr.com/65535/50528659422_2b032a7473_o.png" alt="notation-B"><br><br>
-            Finally, you can indicate a half-turn of a face by<br>
+          <code class="float-right">To denote an anti-clockwise quarter-turn, the face
+            letter is followed by a prime symbol (').<br>
+            So, whilst R indicates a quarter-turn away from you,
+            R' (AKA "R Prime") is a quarter-turn towards you.
+            <img src="https://live.staticflickr.com/65535/50528659422_2b032a7473_o.png" alt="notation-B">
+            Finally, you can indicate a half-turn of a face by
             adding a 2 after the letter (e.g. R2).<br>
             NOTE: Half-turns can be made in either direction.
           </code>
 
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-one" id="spoilercheck1" class="spoilercheck">
           <label for="spoilercheck1" id="spoilerlabel1" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv1" class="spoilerdiv">
@@ -114,11 +111,11 @@
 
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
-          <p>As the centre pieces are fixed, they always remain in the same relation to each other.<br><br>
-            <strong>RED</strong><br>is opposite<br><strong>ORANGE</strong><br><br>
-            <strong>BLUE</strong><br>is opposite<br><strong>GREEN</strong><br><br>
-            <strong>WHITE</strong><br>is opposite<br><strong>YELLOW</strong><br><br>
-            If <strong>YELLOW is U</strong>,<br>
+          <p>As the centre pieces are fixed, they always remain in the same relation to each other.</p>
+          <p><strong>RED</strong><br>is opposite<br><strong>ORANGE</strong></p>
+          <p><strong>BLUE</strong><br>is opposite<br><strong>GREEN</strong></p>
+          <p><strong>WHITE</strong><br>is opposite<br><strong>YELLOW</strong></p>
+          <p>If <strong>YELLOW is U</strong>,
             and <strong>RED is F</strong>:<br>
             <strong>GREEN is R</strong>,<br>
             <strong>ORANGE is B</strong>,<br>
@@ -131,25 +128,25 @@
           <header>
             <h2 id="step-two">Bottom Cross</h2>
           </header>
-          <p>The Beginner Method is a layer-by-layer approach to solving the cube.<br><br>
-            Conventionally, we solve with the white face on the bottom, so let's first orient the cube<br>
-            (turn the whole cube) so that the white centre is facing down.<br><br>
-            We will begin by solving the white edge pieces, forming a white cross on the bottom of the cube.<br><br>
-            This is an intuitive part of the solve, so see if you can work it out for yourself.</p>
+          <p>The Beginner Method is a layer-by-layer approach to solving the cube.</p>
+          <p>Conventionally, we solve with the white face on the bottom, so let's first orient the cube
+            (turn the whole cube) so that the white centre is facing down.</p>
+          <p>We will begin by solving the white edge pieces, forming a white cross on the bottom of the cube.</p>
+          <p>This is an intuitive part of the solve, so see if you can work it out for yourself.</p>
           <code class="float-left">
-            A simple approach is first to make all of the white<br>
-            edges face upwards<br>
-            (around the yellow centre)...<br><br>
+            A simple approach is first to turn all of the white
+            edges, so that they face upwards
+            (around the yellow centre on the top face)...
             <img src="https://live.staticflickr.com/65535/50527255533_6e5c72760e_o.png" alt="whitecross1">
           </code>
           <code class="float-right">
-            ...then line one up (with U moves) to match a middle<br>
+            ...then line one up (with U moves) to match a middle
             centre. Half-turn the white edge to the bottom layer.<br>
-            Repeat this process until all white edges are solved.<br><br>
+            Repeat this process until all white edges are solved.
             <img src="https://live.staticflickr.com/65535/50528190807_fc6872aa5e_o.png" alt="whitecross2">
           </code>
 
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-two" id="spoilercheck2" class="spoilercheck">
           <label for="spoilercheck2" id="spoilerlabel2" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv2" class="spoilerdiv">
@@ -160,55 +157,59 @@
 
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
-          <p>There are more than 43 quintillion<br>
-            (43 billion billion) possible permutations of the cube.<br><br>
-            However, some very clever people eventually proved (in 2010) that ANY scrambled cube can theoretically be solved in 20 moves, or fewer.<br><br>
-            This is known as <a href="https://ruwix.com/the-rubiks-cube/gods-number/" target="_blank">God's Number</a>, because finding an optimal solution from any
-            properly scrambled cube is usually far beyond the capabilities of even the cleverest human brains on our planet.</p>
+          <p>There are more than 43 quintillion
+            (or 43 billion billion) possible scrambled positions (or permutations) of a cube.</p>
+          <p>However, some very clever people eventually proved (in 2010) that ANY scrambled cube can theoretically be solved in 20 moves, or fewer.</p>
+          <p>This is known as <a href="https://ruwix.com/the-rubiks-cube/gods-number/" target="_blank">God's Number</a>, because this is usually far beyond the capabilities of even the cleverest human brains on our planet.</p>
         </div>
 
+<!--<li> tags in the following section only to fulfil fcc challenge criteria.-->
         <section class="main-section xtarget" id="Bottom_Corners">
           <header id="step-three">
             <h2>Bottom Corners</h2>
           </header>
-          <p>Now it’s time to complete the bottom layer of the cube.<br> <br>
-            It is possible to do this intuitively also, but be careful to preserve the solved white edges in the process.<br><br>
-            White corner pieces fall into four categories (CASES), depending on their position and orientation.<br><br>
-            First, let's look for a white corner piece in the top (yellow) layer.<br>
-            Using the colours of the middle centres as a guide, turn the U face until the corner is directly above the position into which it needs to be solved, orienting the cube so that it is the front right corner.</p>
+          <ul>
+          <li>Now it’s time to complete the bottom layer of the cube.</li>
+          <li>It's possible to do this intuitively, but be careful to preserve the solved white edges in the process.</li>
+          <li>White corner pieces fall into four cases, depending on their position and orientation.</li>
+          <li>First, let's look for a white corner piece in the top (yellow) layer.</li>
+          <li>Using the colours of the middle centres as a guide, turn the U face until the corner is directly above the position into which it needs to be solved, orienting the cube so that it is the front right corner.</li>
+          </ul>
 
           <code class="float-middle">
-            If white is facing sideways, use the simple insertion moves illustrated in the CASE 1 and CASE 2 animations.<br>
-            If white is facing up, follow the CASE 3 animation, which is a<br>
-            setup sequence which arrives at (and then follows) CASE 1 insertion.<br><br>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=CASE%201&alg=R%20U%20R%27&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20B*/m%20L*/m&flags=showalg&pov=Ufr" scrolling="no">
+          If white is facing sideways, use the simple insertion moves illustrated in the CASE 1 and CASE 2 animations.<br>
+            If white is facing up, follow the CASE 3 animation, which is a
+            setup sequence which arrives at (and then follows) CASE 1 insertion.
+            <span>
+            <iframe src="https://ruwix.com/widget/3d/?label=CASE%201&alg=R%20U%20R%27&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20B*/m%20L*/m&flags=showalg&pov=Ufr">
             </iframe>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=CASE%202&alg=F'%20U'%20F&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20B*/m%20L*/m&flags=showalg&pov=Ufr" scrolling="no">
+            <iframe src="https://ruwix.com/widget/3d/?label=CASE%202&alg=F'%20U'%20F&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20B*/m%20L*/m&flags=showalg&pov=Ufr">
             </iframe>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=CASE%203&alg=R%20U2'%20R'%20U'%20R%20U%20R'&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20b*/m%20L*/m&flags=showalg&pov=Ufr" scrolling="no">
-            </iframe><br><br>
+            <iframe src="https://ruwix.com/widget/3d/?label=CASE%203&alg=R%20U2'%20R'%20U'%20R%20U%20R'&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20b*/m%20L*/m&flags=showalg&pov=Ufr">
+            </iframe>
+          </span>
             Having solved all corners which were in the top layer, any remaining unsolved ones must be in the bottom layer (CASE 4).
-            Again, holding it in the front right position, kick the piece from the bottom into the top layer,<br>
-            with the sequence <strong>R U R' U'</strong>. It may now be solved with one of the CASES above.<br><br>
+            Again, holding it in the front right position, kick the piece from the bottom into the top layer,
+            with the sequence <strong>R U R' U'</strong>. It may now be solved with one of the CASES above.
           </code>
 
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-three" id="spoilercheck3" class="spoilercheck">
           <label for="spoilercheck3" id="spoilerlabel3" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv3" class="spoilerdiv">
-            <p><strong>R U R&prime; U&prime;</strong> is also known (argh nerd humour) as 'Sexy Move'. This (and others like it)<br>
-              leave most of the cube undisturbed, hence why they are so handy.</p>
+            <p><strong>R U R&prime; U&prime;</strong> is also known as 'Sexy Move' (yeah, really). This (like other similar sequences) is easy to execute and
+              leaves most of the cube undisturbed, hence why it's so handy.</p>
           </div>
         </section>
 
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
-          <p>A notable example of a scramble which requires a full 20 moves to solve, is the <a href="https://en.wikipedia.org/wiki/Superflip" target="_blank">Superflip</a>.<br><br>
-            A Superflipped cube is solved except that all middle edges are flipped the wrong way round.<br><br>
-            The 20 move solution is:<br>
-            <strong>U R2 F B R B2 R U2<br>L B2 R U' D' R2 F<br>R' L B2 U2 F2</strong><br><br>
-            The animations on the navigation bar show the sequence of colours on the yellow face as a Superflip algorithm is executed.<br><br>
-            There is an image of a Superflipped cube somewhere else on this page...<br>
+          <p>A notable example of a scramble which requires a full 20 moves to solve, is the <a href="https://en.wikipedia.org/wiki/Superflip" target="_blank">Superflip</a>.</p>
+          <p>A Superflipped cube is solved except that all middle edges are flipped the wrong way round.</p>
+          <p>The 20 move solution is:<br>
+            <strong>U R2 F B R B2 R U2<br>L B2 R U' D' R2 F<br>R' L B2 U2 F2</strong></p>
+          <p>The animations on the navigation bar show the sequence of colours on the yellow face as a Superflip algorithm is executed.</p>
+          <p>There is an image of a Superflipped cube somewhere else on this page...<br>
             Did you spot it?
           </p>
         </div>
@@ -217,22 +218,23 @@
           <header>
             <h2 id="step-four">Middle Layer</h2>
           </header>
-          <p>Solving the middle layer requires only the insertion of four edge pieces,<br>
-            as there are no corners to contend with.<br><br>
-            This is where we transition from the intuitive into the algorithmic phase of solving.<br><br>
-            It is even possible to solve the middle layer intuitively, but one simple algorithm will do the trick.<br><br>
-            Can you see how the algorithms below insert a middle edge, without disturbing the bottom layer?
+          <p>Solving this layer requires only the insertion of four edge pieces, as there are no corners here.</p>
+          <p>This is where we transition from the intuitive into the algorithmic phase of solving.</p>
+          <p>It is even possible to solve the middle layer intuitively, but one simple algorithm will do the trick.</p>
+          <p>Can you see how the algorithms below insert a middle edge, without disturbing the bottom layer?
           </p>
           <code class="float-middle">
-            Find a middle edge in the top layer and line it up so that it matches a middle centre, as shown below.<br><br>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=RIGHT%20INSERT&alg=U%20R%20U'%20R'%20U'%20F'%20U%20F&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20FR&flags=showalg&pov=Ufr" scrolling="no">
+            Find a middle edge in the top layer and line it up so that it matches a middle centre, as shown below.
+            <span>
+              <iframe src="https://ruwix.com/widget/3d/?label=RIGHT%20INSERT&alg=U%20R%20U'%20R'%20U'%20F'%20U%20F&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20FR&flags=showalg&pov=Ufr">
             </iframe>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=LEFT%20INSERT&alg=U'%20F'%20U%20F%20U%20R%20U'%20R'&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20FR&flags=showalg&pov=Ufr" scrolling="no">
-            </iframe><br><br>
+            <iframe src="https://ruwix.com/widget/3d/?label=LEFT%20INSERT&alg=U'%20F'%20U%20F%20U%20R%20U'%20R'&colored=U*/m%20D*/e%20F*/m%20R*/m%20D*/m%20D*/c%20FR&flags=showalg&pov=Ufr">
+            </iframe>
+          </span>
             It can now be inserted into the middle layer, to the right or the left, using the corresponding algorithm.<br>
-            Note that these algorithms are essentially the same, just a mirror of each other.<br>
+            Note that these algorithms are essentially the same, just a mirror of each other.
           </code>
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-four" id="spoilercheck4" class="spoilercheck">
           <label for="spoilercheck4" id="spoilerlabel4" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv4" class="spoilerdiv">
@@ -243,27 +245,26 @@
 
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
-          <p>Speedcubers compete to solve the Rubik's Cube (and other twisty puzzles) as quickly as possible.<br><br>
-            There are many different methods, but the most popular is <a href="https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/" target="_blank">CFOP</a>, which is favoured by many of the world’s top speedcubers.<br><br>
-            <a href="https://en.wikipedia.org/wiki/Jessica_Fridrich" target="_blank">Jessica Fridrich</a> pioneered this layer-by-layer method, essentially an extremely optimised Beginner method.<br><br>
-            Learning the full CFOP method requires memorising at least 87 algorithms!
-          </p>
+          <p>Speedcubers compete to solve the Rubik's Cube (and other twisty puzzles) as quickly as possible.</p>
+          <p>There are many different methods, but the most popular is <a href="https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/" target="_blank">CFOP</a>, which is favoured by many of the world’s top speedcubers.</p>
+          <p><a href="https://en.wikipedia.org/wiki/Jessica_Fridrich" target="_blank">Jessica Fridrich</a> pioneered this layer-by-layer method, essentially an extremely optimised Beginner method.</p>
+          <p>Learning the full CFOP method requires memorising at least 87 algorithms!</p>
         </div>
 
         <section class="main-section xtarget" id="Orient_Top_Cross">
           <header>
             <h2 id="step-five">Orient Top Cross</h2>
           </header>
-          <p>One layer to go…<br><br>
-            This is where algorithms come to the fore, as it is now extremely difficult to solve pieces intuitively, whilst preserving the two solved layers.<br><br>
-            Thankfully, one simple algorithm can orient the yellow cross.</p>
+          <p>One layer to go…</p>
+          <p>This is where algorithms come to the fore, as it is now extremely difficult to solve pieces intuitively, whilst preserving the two solved layers.</p>
+          <p>Thankfully, one simple algorithm can orient the yellow cross.</p>
           <code class="float-middle">
-            Execute the following algorithm with the yellow face upwards: <strong>F R U R' U' F'</strong><br><br>
-            <img src="https://live.staticflickr.com/65535/50565859211_e77d48e4b1_o.png" width="1197" height="237" alt="orienttopcross"><br>
+            Execute the following algorithm with the yellow face upwards: <strong>F R U R' U' F'</strong>
+            <img src="https://live.staticflickr.com/65535/50565859211_e77d48e4b1_o.png" width="1197" height="237" alt="orienttopcross">
             NOTE: We're interested only in the pattern of the yellow edges on the upper face.<br>
             Ignore the yellow corners.
           </code>
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-five" id="spoilercheck5" class="spoilercheck">
           <label for="spoilercheck5" id="spoilerlabel5" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv5" class="spoilerdiv">
@@ -274,12 +275,12 @@
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
           <p>The <a href="https://www.worldcubeassociation.org/" target="_blank">World Cube Association</a> (WCA) officiates at competitions around the world, and holds events for solving the cube one-handed,
-            blindfolded and even with the feet!<br><br>
-            A variety of other twisty puzzles also feature in these competitions including:<br>
-            <a href="https://en.wikipedia.org/wiki/Pocket_Cube" target="_blank">Pocket Cube</a>,<br>
-            <a href="https://ruwix.com/twisty-puzzles/pyraminx-triangle-rubiks-cube/" target="_blank">Pyraminx</a>,<br>
-            <a href="https://ruwix.com/twisty-puzzles/skewb-pyraminx-mod-skewb-diamond/" target="_blank">Skewb</a>,<br>
-            <a href="https://en.wikipedia.org/wiki/Megaminx" target="_blank">Megaminx</a><br>
+            blindfolded and even with the feet!</p>
+          <p>A variety of other twisty puzzles also feature in these competitions including:</p>
+          <p><a href="https://en.wikipedia.org/wiki/Pocket_Cube" target="_blank">Pocket Cube</a>,
+            <a href="https://ruwix.com/twisty-puzzles/pyraminx-triangle-rubiks-cube/" target="_blank">Pyraminx</a>,
+            <a href="https://ruwix.com/twisty-puzzles/skewb-pyraminx-mod-skewb-diamond/" target="_blank">Skewb</a>,
+            <a href="https://en.wikipedia.org/wiki/Megaminx" target="_blank">Megaminx</a>
             and <a href="https://en.wikipedia.org/wiki/Rubik%27s_Clock" target="_blank">Rubik's Clock</a>.
           </p>
         </div>
@@ -288,38 +289,40 @@
           <header>
             <h2 id="step-six">Permute Top Cross</h2>
           </header>
-          <p>Now we permute the yellow edges.<br>
-            This means shuffling them until they are in their solved positions, relative to the rest of the cube.<br><br>
-            Again, one algorithm suffices, though it may be necessary to execute it twice,<br>
+          <p>Now we permute the yellow edges.</p>
+          <p>This means shuffling them until they are in their solved positions, relative to the rest of the cube.</p>
+          <p>Again, one algorithm suffices, though you may need to execute it twice,
             if all four edges are swapped.</p>
           <code class="float-middle">
-            Rotate the U face until you find two adjacent edges which need to be swapped, relative to the middle layer centres.<br><br>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?alg=R%20U%20R'%20U%20R%20U2%20R'%20U&colored=U-%20U*/m%20U*/e&flags=showalg&pov=Ufr" scrolling="no">
-            </iframe><br><br>
+            Rotate the <strong>U</strong> face, until you find two adjacent edges which need to be swapped to match them with their corresponding middle layer centres.
+            <span>
+            <iframe src="https://ruwix.com/widget/3d/?alg=R%20U%20R'%20U%20R%20U2%20R'%20U&colored=U-%20U*/m%20U*/e&flags=showalg&pov=Ufr">
+            </iframe>
+          </span>
             This algorithm swaps the front and left edges - in this case blue and red.
           </code>
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-six" id="spoilercheck6" class="spoilercheck">
           <label for="spoilercheck6" id="spoilerlabel6" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv6" class="spoilerdiv">
             <p>There are three possible permutations of the yellow edges:<br>
-              1. Two edges are swapped. 3. All four edges are swapped. 3. All edges are solved.</p>
+              1. Two edges are swapped 2. All four edges are swapped 3. All edges are solved</p>
           </div>
         </section>
 
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
-          <p>The current World Record for solving a Rubik’s Cube is a<br>
+          <p>The current World Record for solving a Rubik’s Cube is a
             mind-boggling<br>
             <a href="https://www.youtube.com/watch?v=SB3ut65SFUU" target="_blank">3.47 seconds</a>,<br>
-            achieved by<br>
-            Yusheng Du<br>
-            in 2018.<br><br>
-            Think that's fast?<br>
-            In the same year, a robot, built by students at MIT,<br> solved the cube in an astonishing<br>
-            <a href="https://news.mit.edu/2018/featured-video-solving-rubiks-cube-record-time-0316" target="_blank">0.38 seconds!</a><br><br>
-            ...and here's<br>
-            Max Hilliard<br>
+            achieved by
+            Yusheng Du
+            in 2018.</p>
+            <p>Think that's fast?<br>
+            In the same year, a robot, built by students at MIT, solved the cube in an astonishing<br>
+            <a href="https://news.mit.edu/2018/featured-video-solving-rubiks-cube-record-time-0316" target="_blank">0.38 seconds!</a></p>
+            <p>...and here's
+            Max Hilliard
             breaking the World Record for blindfold solving in 2019, with a time of<br>
             <a href="https://www.youtube.com/watch?v=MJew86mY3wY" target="_blank">15.50 seconds</a>
           </p>
@@ -329,20 +332,22 @@
           <header>
             <h2 id="step-seven">Permute Top Corners</h2>
           </header>
-          <p>Now we permute the yellow corners, shuffling until they are all in the correct position,<br>
-            but not necessarily oriented correctly.<br></p>
+          <p>Now we permute the yellow corners, shuffling them until they are all in the correct position,
+            but not necessarily oriented correctly.</p>
           <code class="float-middle">
             Turning the whole cube (not the U face), look for a corner which is already in the correct position.<br>
-            If there are none, you will first need to execute either of the following algorithms to create one.<br><br>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=CLOCKWISE&alg=L'%20U%20R%20U'%20L%20U%20R'%20U'&setupmoves=L'%20U%20R%20U'%20L%20U%20R'%20U'&tweaks=F:Ruf%20U:Fur%20R:Ufr%20L:Ful%20B:Luf%20U:Lub%20R:Ubl%20L:Rub%20F:Bur&flags=showalg" scrolling="no">
+            If there are none, you will first need to execute either of the following algorithms to create one.
+            <span>
+            <iframe src="https://ruwix.com/widget/3d/?label=CLOCKWISE&alg=L'%20U%20R%20U'%20L%20U%20R'%20U'&setupmoves=L'%20U%20R%20U'%20L%20U%20R'%20U'&tweaks=F:Ruf%20U:Fur%20R:Ufr%20L:Ful%20B:Luf%20U:Lub%20R:Ubl%20L:Rub%20F:Bur&flags=showalg">
             </iframe>
-            <iframe width="280" height="360" style="width: 280px; height: 360px; overflow: hidden;" src="https://ruwix.com/widget/3d/?label=ANTICLOCKWISE&alg=U%20R%20U'%20L'%20U%20R'%20U'%20L&setupmoves=U%20R%20U'%20L'%20U%20R'%20U'%20L&tweaks=F:Ruf%20U:Fur%20R:Ufr%20R:Ful%20U:Luf%20B:Ufl%20U:Lub%20L:Ulb%20F:Bul%20B:Urb%20L:Rub%20U:Bur&flags=showalg" scrolling="no">
-            </iframe><br><br>
+            <iframe src="https://ruwix.com/widget/3d/?label=ANTICLOCKWISE&alg=U%20R%20U'%20L'%20U%20R'%20U'%20L&setupmoves=U%20R%20U'%20L'%20U%20R'%20U'%20L&tweaks=F:Ruf%20U:Fur%20R:Ufr%20R:Ful%20U:Luf%20B:Ufl%20U:Lub%20L:Ulb%20F:Bul%20B:Urb%20L:Rub%20U:Bur&flags=showalg">
+            </iframe>
+          </span>
             Now orient the whole cube so that a correctly positioned piece is in the front right corner (as above).<br>
             The algorithms above shuffle the other three corners clockwise or anticlockwise, so choose wisely!<br>
             NOTE: As with the middle edge insertion algorithm, these two algorithms are also a mirror of each other.
           </code>
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-seven" id="spoilercheck7" class="spoilercheck">
           <label for="spoilercheck7" id="spoilerlabel7" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv7" class="spoilerdiv">
@@ -353,15 +358,15 @@
         <div class="fun-facts">
           <h3><em>FUN FACTS</em></h3>
           <p>A critical factor for faster solves is<br>
-            <a href="https://www.speedsolving.com/wiki/index.php/Turns_per_second#:~:text=Turns%20per%20second%20(or%20TPS,took%20to%20execute%20the%20turns." target="_blank">Turns Per Second</a><br><br>
-            High TPS relies both on nifty <a href="https://ruwix.com/the-rubiks-cube/fingertricks/" target="_blank">fingertricks</a>,<br>
-            and on using a cube which can keep up!<br><br>
-            You can buy a<br>
+            <a href="https://www.speedsolving.com/wiki/index.php/Turns_per_second#:~:text=Turns%20per%20second%20(or%20TPS,took%20to%20execute%20the%20turns." target="_blank">Turns Per Second</a></p>
+          <p>High TPS relies both on nifty <a href="https://ruwix.com/the-rubiks-cube/fingertricks/" target="_blank">fingertricks</a>,
+            and on using a cube which can keep up!</p>
+          <p>You can buy a
             <a href="https://www.speedcubestore.co.uk/product/qiyi-warrior-w-3x3-stickerless/?dTribesID=c9cb16e679ff06dc0d972d96bdf0bfc5%7Cadtribes%7C1941&utm_source=Google%20Shopping&utm_campaign=SCS1&utm_medium=cpc&utm_term=1941&gclid=CjwKCAiAv4n9BRA9EiwA30WND5bL5R0J198e8a_PtGBjvqbdWP9XIfQ6x07BR6GN5A-mqGwED1HezBoCYUgQAvD_BwE" target="_blank">basic speedcube</a> pretty cheaply, but
-            <a href="https://www.kewbz.co.uk/products/gan-11-m-pro-pre-order" target="_blank">top brands</a><br>
-            boast superior<br>
-            <a href="https://www.speedcubereview.com/cubing-terms.html#:~:text=Corner%20Cutting,have%20very%20exceptional%20corner%20cutting." target="_blank">corner-cutting</a>, magnets, <a href="https://www.kewbz.co.uk/blogs/how-to/beginners-guide-to-cube-tensioning" target="_blank">tensioning</a>, and a host of other features, which start to get quite pricey!<br><br>
-            ...and don't forget to stay <a href="https://ruwix.com/the-rubiks-cube/lubricate-rubiks-cube-with-silicone-or-vaseline-petroleum-jelly/" target="_blank">well-lubed!</a>
+            <a href="https://www.kewbz.co.uk/products/gan-11-m-pro-pre-order" target="_blank">top brands</a>
+            boast superior
+            <a href="https://www.speedcubereview.com/cubing-terms.html#:~:text=Corner%20Cutting,have%20very%20exceptional%20corner%20cutting." target="_blank">corner-cutting</a>, magnets, <a href="https://www.kewbz.co.uk/blogs/how-to/beginners-guide-to-cube-tensioning" target="_blank">tensioning</a>, and a host of other features, which start to get quite pricey!</p>
+          <p>...and don't forget to stay <a href="https://ruwix.com/the-rubiks-cube/lubricate-rubiks-cube-with-silicone-or-vaseline-petroleum-jelly/" target="_blank">well-lubed!</a>
           </p>
         </div>
 
@@ -369,20 +374,22 @@
           <header>
             <h2 id="step-eight">Orient Top Corners</h2>
           </header>
-          <p>Now you are only one step away from solving the cube!<br>
-            There is a simple algorithm which orients the yellow corners, but you must follow it very carefully.</p>
+          <p>Now you are only one step away from solving the cube!</p>
+          <p>There is a simple algorithm which orients the yellow corners, but you must follow it very carefully.</p>
           <code class="float-middle">
             Begin by holding the cube with an incorrectly oriented corner in the front right position.<br>
-            The algorithm is: <strong>R' D' R D</strong>.<br>
-            You will need to execute this algorithm either twice or four times, to orient the corner correctly.<br><br>
-            <iframe width="280" height="380" style="width: 280px; height: 380px; overflow: hidden;" src="https://ruwix.com/widget/3d/?alg=R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U2&setupmoves=R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U2&tweaks=F:Ruf%20R:Urf%20U:Fur%20L:Flu%20U:Luf%20F:Ulf%20U:Bul%20L:Ubl%20B:Lub&flags=showalg" scrolling="no">
-            </iframe><br><br>
+            The algorithm is: <strong>R' D' R D</strong><br>
+            You will need to execute this algorithm either twice or four times, to orient the corner correctly.
+            <span>
+              <iframe src="https://ruwix.com/widget/3d/?alg=R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U2&setupmoves=R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U'%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20R'%20D'%20R%20D%20U2&tweaks=F:Ruf%20R:Urf%20U:Fur%20L:Flu%20U:Luf%20F:Ulf%20U:Bul%20L:Ubl%20B:Lub&flags=showalg">
+            </iframe>
+          </span>
             Having fixed one corner, now turn the U face ONLY to bring another corner to the front right position.<br>
             Repeat the process until all corners are solved.<br>
             NOTE: The cube may seem pretty scrambled as you execute this final step, but do not fear!<br>
             If you have done it correctly, YOU HAVE SOLVED THE CUBE!
           </code>
-          <div style="clear: both;"></div><br>
+          <div style="clear: both;"></div>
           <input type="checkbox" name="spoiler-eight" id="spoilercheck8" class="spoilercheck">
           <label for="spoilercheck8" id="spoilerlabel8" class="spoilerlabel">HINT:</label>
           <div id="spoilerdiv8" class="spoilerdiv">
@@ -393,19 +400,19 @@
 
         <div class="fun-facts">
           <h3><em>CREDITS</em></h3>
-          <p>I'm <a href="http://www.dougbadgercellist.co.uk/" target="_blank">Doug Badger</a><br>
-            and I created this<br>
-            page during<br>
-            Lockdown 2020.<br><br>
-            My average solve time is around<br>
-            25 seconds<br>
-            and my fastest recorded time is<br>
-            18.78 seconds.<br><br>
-            The cube animations in the guide were created using an online
-            <a href="https://ruwix.com/widget/3d/" target="_blank">widget</a>, created by former champion speedcuber<br>
-            <a href="https://en.wikipedia.org/wiki/Lars_Petrus" target="_blank">Lars Petrus</a><br><br>
-            I started learning to code this year at<br>
-            the excellent<br>
+          <p>I'm <a href="http://www.dougbadgercellist.co.uk/" target="_blank">Doug Badger</a>
+            and I created this
+            page during
+            Lockdown 2020.</p>
+          <p>My average solve time is around
+            24 seconds
+            and my fastest recorded time is
+            16.69 seconds.</p>
+          <p>The cube animations in the guide were created using an online
+            <a href="https://ruwix.com/widget/3d/" target="_blank">widget</a>, created by former champion speedcuber
+            <a href="https://en.wikipedia.org/wiki/Lars_Petrus" target="_blank">Lars Petrus</a></p>
+          <p>I started learning to code this year at
+            the excellent
             <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp.org</a>
           </p>
         </div>
