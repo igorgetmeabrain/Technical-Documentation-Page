@@ -60,7 +60,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  width: 14.5%;
+  width: 15%;
   height: 100vh;
   font-size: 1.25rem;
   color: white;
@@ -684,7 +684,7 @@ html {
 #main-doc {
   display: grid;
   grid-template-columns: 82% auto;
-  margin-left: 14%;
+  margin-left: 14.5%;
   margin-top: -8px;
   margin-right: -6px;
 }
@@ -697,6 +697,17 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  padding: 1%;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  padding: 1% 20% 1% 20%;
+  margin: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -707,19 +718,14 @@ h3 {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 12px 12px rgba(0, 0, 0, 0.75);
 }
 
-h2 {
-  padding: 1%;
-  margin: 0;
+.main-section ul, p {
+  font-size: 1.3rem;
+  text-align: center;
 }
 
-.main-section ul {
-  text-align: center;
-  font-size: 1.3rem;
-}
 .main-section li {
   display: block;
   margin-bottom: 2%;
-
 }
 
 #Introduction {
@@ -729,11 +735,6 @@ h2 {
   padding: 2%;
   border-top: 0.25rem solid blue;
   border-bottom: 0.25rem solid blue;
-}
-
-p {
-  font-size: 1.3rem;
-  text-align: center;
 }
 
 .float-left {
@@ -750,7 +751,7 @@ p {
 }
 
 code {
-  min-height: 60vh;
+  min-height: 65vh;
   font-size: 1rem;
   text-align: center;
   background: var(--whitish-background);
@@ -768,10 +769,10 @@ code img {
   height: auto;
   border: 0.25rem solid var(--main-blue);
 }
+
 strong {
   font-size: 1.5rem;
 }
-
 
 .main-section {
   grid-column: 1/2;
@@ -794,12 +795,6 @@ strong {
   text-decoration: none;
   color: blue;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-h3 {
-  font-size: 1.4rem;
-  padding: 1% 20% 1% 20%;
-  margin: 0;
 }
 
 .spoilercheck {
@@ -825,17 +820,16 @@ h3 {
 
 .spoilerdiv {
   display: inline-block;
-  max-width: 90%;
+  max-width: 88%;
   margin-left: 1%;
   background: blue;
   border-radius: 10px;
+  font-size: 1rem;
   color: white;
   padding: 0 1%;
   transition: 1s;
   opacity: 0;
 }
-
-.spoilerdiv p {font-size: 1rem;}
 
 .spoilercheck:checked ~ .spoilerdiv {
   opacity: 1;
@@ -878,45 +872,95 @@ span {display: block; margin: 1% 0;}
   background: var(--green-background);
 }
 
-/*MEDIA QUERIES*/
+/* START MEDIA QUERIES */
 @media (max-width: 1300px) {
+
+  #navbar {
+    font-size: 1rem;
+  }
+
+  #navbar-header {
+    font-size: 1.2rem;
+  }
+
+  #cube1 {
+  margin-bottom: 15%;
+  }
+
+  #cube2 {
+    margin-top: 15%;
+  }
+
+  h1 {font-size: 3rem;}
+
   h2,
-  h3 {
-    font-size: 1.5rem;
+  h3 {font-size: 1.25rem;}
+
+  #main-doc {
+    grid-template-columns: 78% auto;
   }
-  code {
-    font-size: 1.5rem;
-  }
-  strong {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.8rem;
-  }
-  .float-left,
-  .float-right {
-    height: 50vw;
-  }
+
   .spoilerlabel {
-    font-size: 2rem;
+    top: -3rem;
   }
+
   .spoilerdiv {
     max-width: 85%;
   }
+}
+
+@media (max-width: 1100px) {
+
+  #navbar {
+    width: 15.5%;
+  }
+
+  #cube1 {
+  margin-top: 15%;
+  }
+
+  h1 {font-size: 3.5rem;}
+
+  h2,
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  #main-doc {
+    grid-template-columns: 70% auto;
+  }
+
+  .main-section ul, p {
+    font-size: 1.2rem;
+  }
+
+  code {
+    min-height: 60vh;
+    font-size: 0.9rem;
+  }
+
+  strong {
+    font-size: 1.2rem;
+  }
+
+  .spoilerlabel {
+    top: -2rem;
+  }
+
+  .spoilerdiv {
+      max-width: 80%;
+    }
+
   .spoilerdiv p {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (orientation: portrait), (max-width: 800px) {
+
   #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto;
-    color: white;
-    background: hsla(0, 0%, 0%, 0.9);
     text-align: none;
     border-right: none;
   }
@@ -931,6 +975,7 @@ span {display: block; margin: 1% 0;}
     grid-row-gap: 1px;
     grid-column-gap: 1px;
   }
+
   #cube2 {
     position: absolute;
     top: 0;
@@ -947,37 +992,28 @@ span {display: block; margin: 1% 0;}
 
   #navbar-header {
     position: absolute;
-    top: 25%;
+    top: 27%;
     left: 0;
     width: 100%;
     text-align: center;
   }
+
   #navbar a {
     display: inline;
-    padding: 0.2% 0.8%;
+    padding: 0 0.8%;
     margin-right: 0;
     border-top: none;
-  }
-
-  .nav-link {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: blue;
-    transition: all 0.3s ease 0s;
-  }
-  .nav-link:hover, .nav-link:focus {
-    background: gray;
-    color: red;
-  }
-  .xtarget:target {
-    padding-top: 22%;
-    margin-top: -22%;
   }
 
   #main-doc {
     display: block;
     width: 102.25%;
     margin-left: -1.25%;
+    margin-top: 12.25%;
+  }
+
+  #superflip {
+    width: 0;
   }
 
   h1 {
@@ -986,59 +1022,59 @@ span {display: block; margin: 1% 0;}
     top: 1%;
     left: 13.5%;
     width: 72.5%;
+    font-size: 2.25rem;
     text-align: center;
     margin-top: 0;
     z-index: 4;
   }
 
-  #superflip {
-    display: block;
-    width: 0;
-    height: auto;
-    padding: 0;
-  }
-  #Introduction {
-    margin: 20% 0 0 0;
-  }
-
-  .main-section {
-    border: 0.5rem solid blue;
-  }
-  .fun-facts {
-    border: 0.5rem solid blue;
-  }
-
-  h2,
-  h3 {
-    font-size: 3rem;
+  h2, h3 {
+    font-size: 2rem;
     margin-top: 0;
   }
+
+  #Introduction {
+    border: 0.5rem solid blue;
+  }
+
   .float-left,
   .float-right {
-    height: 80vw;
+    min-height: 75vw;
   }
 
   code {
-    font-size: 2.7rem;
+    font-size: 1.25rem;
     padding: 1%;
   }
+
   strong {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
-  p {
-    font-size: 3rem;
+
+  .main-section ul, p {
+    font-size: 1.5rem;
   }
+
   .spoilerlabel {
-    font-size: 2.5rem;
+    top: -3rem;
+    font-size: 1.5rem;
   }
+
   .spoilerdiv {
-    max-width: 80%;
+    max-width: 85%;
   }
+
   .spoilerdiv p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .xtarget:target {
+  margin-top: -160px;
+  padding-top: 160px;
   }
 }
-/*END OF MEDIA QUERY*/
+
+/* END OF MEDIA QUERIES */
 
 .container {
   position: relative;
