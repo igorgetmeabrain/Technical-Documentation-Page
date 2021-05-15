@@ -684,7 +684,7 @@ html {
 
 #main-doc {
   display: grid;
-  grid-template-columns: 82% auto;
+  grid-template-columns: 81.5% auto;
   margin-left: 14.5%;
   margin-top: -8px;
   margin-right: -6px;
@@ -1090,7 +1090,7 @@ span {display: block; margin: 1% 0;}
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: -1%;
   right: 0;
   z-index: 1;
   background-image: linear-gradient(90deg, hsla(107, 100%, 50%, 1), white);
