@@ -2,10 +2,11 @@
   font-family: "Secular One", sans-serif;
 
   --main-blue: hsla(235, 100%, 50%, 0.5);
+  --blue-links: hsla(237, 91%, 67%, 1);
   --black-background: hsla(0, 0%, 0%, 0.9);
   --whitish-background: hsla(0, 0%, 100%, 0.4);
   --blackish-background: hsla(0, 0%, 0%, 0.4);
-  --orange-titles: hsla(20, 100%, 60%, 0.8);
+  --orange-titles: hsla(20, 100%, 50%, 0.9);
   --white-background: linear-gradient(
     135deg,
     hsla(0, 0%, 100%, 0),
@@ -673,12 +674,12 @@ html {
   width: 100%;
   text-decoration: none;
   font-size: 1.1rem;
-  color: blue;
+  color: var(--blue-links);
   transition: all 0.3s ease 0s;
 }
 .nav-link:hover, .nav-link:focus {
-  background: gray;
-  color: red;
+  background: yellow;
+  color: black;
 }
 
 #main-doc {
@@ -793,8 +794,10 @@ strong {
 
 .fun-facts a {
   text-decoration: none;
-  color: blue;
+  color: var(--main-blue);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  letter-spacing: 1px;
+  font-size: 1.1em;
 }
 
 .spoilercheck {
@@ -811,6 +814,7 @@ strong {
   font-size: 1.25rem;
   padding: 1%;
   cursor: pointer;
+  border: 2px solid white;
 }
 
 .spoilerlabel:hover, .spoilerlabel:focus {
@@ -829,6 +833,7 @@ strong {
   padding: 0 1%;
   transition: 1s;
   opacity: 0;
+  border: 2px solid white;
 }
 
 .spoilercheck:checked ~ .spoilerdiv {
@@ -1088,11 +1093,10 @@ span {display: block; margin: 1% 0;}
   left: 0;
   right: 0;
   z-index: 1;
-  background-image: url("https://live.staticflickr.com/65535/50444594401_9ff08e6a23_o.png");
-  background-size: 50.5%;
-  background-repeat: repeat;
-  filter: blur(10px);
-  opacity: 0.7;
+  background-image: linear-gradient(90deg, hsla(107, 100%, 50%, 1), white);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
 }
 
 .content {
